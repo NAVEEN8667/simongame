@@ -1,0 +1,136 @@
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+
+  color: #fef2bf;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.footer-text {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.footercard {
+  position: relative;
+  width: 80%;
+  height: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+  color: white;
+  padding: 21px;
+  box-shadow: 0 0 10px #000;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  transform: scale(0.95);
+  animation: fadeScaleIn 1.8s ease-in forwards;
+  transition: 0.9s ease;
+}
+.footercard:hover {
+  width: 80%;
+}
+
+.footercard::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(from 0deg, #00f, #0ff, #0f0, #ff0, #f00, #00f);
+  z-index: -1;
+  animation: rotate 4s linear infinite;
+  border-radius: 32px;
+}
+
+.footercard::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: #011f3f;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  z-index: -1;
+  border-radius: 30px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.instructioncontainer {
+  color: white;
+  width: 50%;
+  margin: auto;
+  text-align: start;
+  padding: 10px;
+  border: 6px grey;
+  border-style: double;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 20px;
+}
+li {
+  margin-bottom: 5px;
+}
+.instructiontitle {
+  text-align: center;
+}
